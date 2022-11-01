@@ -80,8 +80,10 @@ https://github.com/espressif/esp-idf/tree/master/examples/peripherals/uart/uart_
  документация на библиотеку:
 https://esp-idf-lib.readthedocs.io/en/latest/index.html
 
-		3 Для формирования файла конфигурации указать Pyton расположение проекта, например,
+		3 Для формирования файла конфигурации указать Pyton расположение проекта,
+		например,
 cd C:\ESP32\Project\controller_RS485+BLE
+
 	Задать чип ESP32 в качестве объекта для компилирования
 idf.py set-target esp32
 
