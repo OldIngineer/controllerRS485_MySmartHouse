@@ -80,23 +80,7 @@ https://github.com/espressif/esp-idf/tree/master/examples/peripherals/uart/uart_
  документация на библиотеку:
 https://esp-idf-lib.readthedocs.io/en/latest/index.html
 
-	3 Содержимое файла sdkconfig.defaults:
-==============================================================
-# Отменить некоторые значения по умолчанию, чтобы включить стек BT
-# в этом примере
-
-#
-# Конфигурация BT
-#
-CONFIG_BT_ENABLED = y
-CONFIG_BTDM_CTRL_MODE_BLE_ONLY = y
-CONFIG_BTDM_CTRL_MODE_BR_EDR_ONLY = n
-CONFIG_BTDM_CTRL_MODE_BTDM = n
-CONFIG_BT_BLUEDROID_ENABLED = n
-CONFIG_BT_CONTROLLER_ONLY = y
-#последние 2 строки добавлены в 2020г
-==============================================================
-	Для формирования файла конфигурации указать Pyton расположение проекта, например,
+		3 Для формирования файла конфигурации указать Pyton расположение проекта, например,
 cd C:\ESP32\Project\controller_RS485+BLE
 	Задать чип ESP32 в качестве объекта для компилирования
 idf.py set-target esp32
