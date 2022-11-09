@@ -69,9 +69,8 @@
   разряд 4 в мл.байте для управления передаваемом по RS485;
 - вкл.\выкл. розетка.
   разряд 5 в мл.байте для управления передаваемом по RS485.
-
-
-		2 За основу взяты примеры:
+  
+За основу взяты примеры:
 - работа UART ESP32 через интерфейс RS485:
 https://github.com/espressif/esp-idf/tree/master/examples/peripherals/uart/uart_echo_rs485
 - работа с BLE "esp-idf/examples/bluetooth/hci/controller_vhci_ble_adv";
@@ -81,17 +80,8 @@ https://github.com/UncleRus/esp-idf-lib;
  документация на библиотеку:
 https://esp-idf-lib.readthedocs.io/en/latest/index.html
 
-		3 Для формирования файла конфигурации указать Pyton расположение проекта,
-		например:
-cd C:\ESP32\Project\controller_RS485+BLE
+Программа контроллеров подключаемых к локальной домашней сети "Мой умный дом" через интерфейс BLE
+приведена в репозитарии: https://github.com/OldIngineer/controllerBLE_MySmartHouse
 
-Задать чип ESP32 в качестве объекта для компилирования:
-idf.py set-target esp32
-
-Изменение тактовой частоты MIN 80MHz командой для компилятора:
-"idf.py menuconfig" в настройках таблицы: component config/ESP_specific/
-
-Использование только одного ядра "PRO_CPU" командой для компилятора:
-"idf.py menuconfig" в настройках таблицы:
-component config/FreeRTOS/Run FreeRTOS only on first core
-	
+Программа устройства управляющего локальной сетью (телефон) приведена в репозитарии:
+https://github.com/OldIngineer/MySmartHouse2
