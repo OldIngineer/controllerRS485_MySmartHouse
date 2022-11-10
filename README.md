@@ -82,15 +82,20 @@ https://github.com/UncleRus/esp-idf-lib;
 https://esp-idf-lib.readthedocs.io/en/latest/index.html
 
 ДЛЯ ФОРМИРОВАНИЯ ФАЙЛА КОНФИГУРАЦИИ
-   Указать Pyton расположение проекта, например:
-cd C:\ESP32\Project\controller_RS485+BLE
-   Задать чип ESP32 в качестве объекта для компилирования:
-idf.py set-target esp32
-   Изменение тактовой частоты MIN 80MHz командой для компилятора:
-"idf.py menuconfig" в настройках таблицы: component config/ESP_specific/
-   Использование только одного ядра "PRO_CPU" командой для компилятора:
-"idf.py menuconfig" в настройках таблицы:
-component config/FreeRTOS/Run FreeRTOS only on first core
+
+Указать Pyton расположение проекта, например:
+     	cd C:\ESP32\Project\controller_RS485+BLE
+	
+Задать чип ESP32 в качестве объекта для компилирования:
+    	 idf.py set-target esp32
+	 
+Изменение тактовой частоты MIN 80MHz командой для компилятора:
+    	"idf.py menuconfig" в настройках таблицы: component config/ESP_specific/
+	
+Использование только одного ядра "PRO_CPU" командой для компилятора:
+    	"idf.py menuconfig" в настройках таблицы:
+    	component config/FreeRTOS/Run FreeRTOS only on first core
+
 
 ПРОГРАММА контроллеров подключаемых к локальной домашней сети "Мой умный дом" через интерфейс BLE
 приведена в репозитарии: https://github.com/OldIngineer/controllerBLE_MySmartHouse
